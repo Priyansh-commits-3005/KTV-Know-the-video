@@ -1,0 +1,25 @@
+{
+  "name": "KTV - Know The Video",
+  "description": "An extension that helps you to know the video you are watching.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "first_screen.html",
+    "default_icon": "ktv_logo_250.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/script.js"],
+      "matches": [
+        "https://www.youtube.com/watch*"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "http://localhost:8000/*"
+  ],
+  "permissions": [
+   "tabs"
+]
+  
+}

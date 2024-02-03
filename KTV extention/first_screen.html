@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #F4FBFF;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-start {
+        justify-content: flex-start;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .w-200 {
+        width: 320px;
+      }
+      .w-fit {
+        width: fit-content;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .p-10 {
+        padding: 10px;
+      }
+      .text-p-10 {
+        padding: 5px 10px;
+      }
+      .p-20 {
+        padding: 20px;
+      }
+      .mt-15 {
+        margin-top: 15px;
+      }
+      .mt-5 {
+        margin-top: 5px;
+      }
+      .ml-15 {
+        margin-left: 15px;
+      }
+      .m-20 {
+        margin: 20px;
+      }
+      .mb-20 {
+        margin-bottom: 20px;
+      }
+      .gap-20 {
+        gap: 20px;
+      }
+      .gap-7 {
+        gap: 7px;
+      }
+      .text-lg {
+        font-size: 24px;
+      }
+      .text-md {
+        font-size: 18px;
+      }
+      .text-sm {
+        font-size: 16px;
+      }
+      .font-bold {
+        font-weight: bold;
+      }
+      .font-semibold {
+        font-weight: 600;
+      }
+      .text-green {
+        color: #3aa159;
+      }
+      .text-blue {
+        color: #3aaec8;
+      }
+      .text-red {
+        color: #e1797a;
+      }
+      .text-darkBlue {
+        color: #1A1369;
+      }
+      .text-lightBlue {
+        color: #5A52B9;
+      }
+      .text-white {
+        color: #ffffff;
+      }
+      .bg-green {
+        background-color: #3aa159;
+      }
+      .bg-red {
+        background-color: #e1797a;
+      }
+      .bg-blue {
+        background-color: #3aaec8;
+      }
+      .rounded-lg {
+        border-radius: 8px;
+      }
+      input {
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #3aaec8;
+      }
+      button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        background-color: #5A52B9;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="rounded-lg">
+    <div class="flex flex-col justify-center items-center w-200 p-10">
+      <img class="m-20" src="./images/ktv_h_logo.png" alt="">
+
+      <div class="flex gap-20">
+        <div class="flex">
+          <div class="flex flex-col justify-center items-center text-lg text-green">
+            <div class="font-bold" id="po-cent" ></div>
+            <div class="text-sm font-semibold">positive</div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center text-lg text-green text-blue">
+          <div class="font-bold" id="nu-cent" ></div>
+          <div class="text-sm font-semibold">neutral</div>
+        </div>
+        <div class="flex flex-col justify-center items-center text-lg text-green text-red">
+          <div class="font-bold" id="ne-cent" ></div>
+          <div class="text-sm font-semibold">negative</div>
+        </div>
+      </div>
+
+      <div class="w-full flex flex-col justify-start">
+        <span class="text-md font-bold ml-15 mt-15 text-darkBlue">What viewers felt</span>
+        <span class="text-md font-semibold ml-15 mt-5 text-lightBlue">The video is helpful but the solution differs system to system</span>
+      </div>
+      <div class="w-full flex flex-col justify-start mb-20">
+        <span class="text-md font-bold ml-15 mt-15 text-darkBlue">Essential keywords</span>
+        <div class="ml-15 mt-15 flex gap-7 flex-wrap" id="imp-ks">
+          <!-- <div class="rounded-lg bg-green text-p-10 text-sm w-fit font-semibold text-white">works</div>
+          <div class="rounded-lg bg-green text-p-10 text-sm w-fit font-semibold text-white">best explanation</div>
+          <div class="rounded-lg bg-green text-p-10 text-sm w-fit font-semibold text-white">easy to follow</div>
+          <div class="rounded-lg bg-red text-p-10 text-sm w-fit font-semibold text-white">old</div>
+          <div class="rounded-lg bg-red text-p-10 text-sm w-fit font-semibold text-white">very slow</div> -->
+        </div>
+
+        <!-- <div>
+          <input class="m-20" type="text" name="" id="li">
+          <button id="SubmitBtn">Submit</button>
+        </div> -->
+      </div>
+    </div>
+      <script src="screenScript.js"></script>
+      <!-- <script type="module" src="./scripts/script.js"></script>
+      <script type="module" src="screenScript.js"></script> -->
+
+      <!-- <script>
+        document.querySelector('#SubmitBtn').addEventListener('click', () => {
+          let li = document.querySelector('#li').value
+          console.log(li)
+          window.location.href = `http://localhost:3000/ktv/second_screen.html?li=${li}`
+        })
+      </script> -->
+
+    </div>
+  </body>
+</html>
